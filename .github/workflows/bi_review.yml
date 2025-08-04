@@ -27,7 +27,7 @@ jobs:
       - name: Debug OIDC Claims
         uses: github/actions-oidc-debugger@main
         with:
-          audience: '${{ github.server_url }}/${{ github.github.repositoryUrl }}'
+          audience: '${{ github.repositoryUrl }}'
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
