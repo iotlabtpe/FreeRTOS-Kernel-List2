@@ -24,10 +24,6 @@ jobs:
       pull-requests: write
       pages: write
     steps:
-      - name: Debug OIDC Claims
-        uses: github/actions-oidc-debugger@main
-        with:
-          audience: '${{ github.repositoryUrl }}'
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
